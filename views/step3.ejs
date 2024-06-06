@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="items-center flex">
+        
+        <ol class="flex items-center w-full p-3 space-x-2 text-sm font-medium text-center text-gray-500 bg-white border border-gray-200 rounded-lg shadow-sm dark:text-gray-400 sm:text-base dark:bg-gray-800 dark:border-gray-700 sm:p-4 sm:space-x-4 rtl:space-x-reverse">
+            <li class="flex items-center">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-blue-600 rounded-full shrink-0 dark:border-blue-500">
+                    1
+                </span>
+                Prpject<span class="hidden sm:inline-flex sm:ms-2">Title</span>
+                <svg class="w-3 h-3 ms-2 sm:ms-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+                </svg>
+            </li>
+            <li class="flex items-center ">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    2
+                </span>
+                ML<span class="hidden sm:inline-flex sm:ms-2">Input format</span>
+                <svg class="w-3 h-3 ms-2 sm:ms-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+                </svg>
+            </li>
+            <li class="flex items-center  text-blue-600 dark:text-blue-500">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    3
+                </span>
+                ML Output Format
+                <svg class="w-3 h-3 ms-2 sm:ms-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+                </svg>
+            </li>
+            <li class="flex items-center">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    4
+                </span>
+                Website<span class="hidden sm:inline-flex sm:ms-2">Components</span>
+                <svg class="w-3 h-3 ms-2 sm:ms-4 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 12 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m7 9 4-4-4-4M1 9l4-4-4-4"/>
+                </svg>
+            </li>
+            <li class="flex items-center">
+                <span class="flex items-center justify-center w-5 h-5 me-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+                    5
+                </span>
+                Final<span class="hidden sm:inline-flex sm:ms-2">Preview</span>
+               
+            </li>
+        </ol>
+        
+        
+        </div>
+    
+
+
+
+    <div class="mainbox  w-1/2 mx-auto p-10">
+        <div class="mb-6">
+            <label for="large-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Enter What
+                Your Model Gives as output</label>
+        </div>
+        <div>
+
+            <div>
+                <form id="detailed-pricing" class="w-full overflow-x-auto" method="post" action="/step3">
+                    <div class="overflow-hidden min-w-max">
+
+                        <div
+                            class="grid grid-cols-2 p-4 text-sm font-medium text-gray-900 bg-gray-100 border-t border-b border-gray-200 gap-x-16 dark:bg-gray-800 dark:border-gray-700 dark:text-white">
+                            <div class="flex items-center">Feature Label</div>
+                            <div>Feature Type</div>
+                        </div>
+
+                        <div id="num-features">
+                            <input type="number" name="NUM-FEATURE" id="NUM-FEATURE" value="1" id="" hidden required>
+
+                            <div class="grid grid-cols-2 px-4 py-5 text-sm text-gray-700 border-b border-gray-200 gap-x-16 dark:border-gray-700">
+                                <input type="text" id="OUTPUT" name="OUTPUT" class="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-xs focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required>
+                                
+                                <div>
+                                    <div class="flex items-center">
+                                        <input type="radio" value="Number" name="OUTPUT-TYPE" id="OUTPUT-TYPE-1" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" required>
+                                        <label class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Number</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" value="Text" name="OUTPUT-TYPE" id="OUTPUT-TYPE-2" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" required>
+                                        <label class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Text</label>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <input type="radio" value="Image" name="OUTPUT-TYPE" id="OUTPUT-TYPE-3" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" required>
+                                        <label class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Image</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                
+                <div>
+                    <button type="submit"
+                    class="my-6 float-right text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Next
+                    </button>
+                </div>
+
+                </form>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+</body>
+
+
+</html>
